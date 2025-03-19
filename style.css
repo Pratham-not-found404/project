@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.foot{
+    height: 8vh;
+    width: 100vw;
+    /* background-color: green; */
+}
+
+/* NAVBAR SETTINGS */
+.nav{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    position: sticky;
+    top: 0;
+}
+.left .photo{
+    height: 35px;
+    width:35px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.left .fa-house{
+    font-size: 30px;
+    margin-left: 6rem;
+    margin-top: 0.9rem;
+}
+.left input{
+    height: 3rem;
+    width: 20rem;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    margin-top: -2rem;
+}
+.left input::placeholder{
+    padding-left: 3rem;
+    color: white;
+    font-size: 15px;
+    opacity: 0.75;
+}
+.left .search{
+    position: relative;
+    font-size: 23px;
+    background-color: rgba(128, 128, 128, 0);
+    left: 2.4rem;
+    top: 5px;
+}
+.right .navi{
+    color: white;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.navi h3,.navi h4{
+    padding-right: 30px;
+    padding-top: 23px;
+    opacity: 0.75;
+}
+.dandi{
+    font-size: 2rem;
+}
+.btn{
+    background-color: white;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 25px;
+    font-weight:bolder;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.navi h3:not(.dandi):hover
+,.navi h4:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/* sidebar settings */
+.sidebar{
+    display: inline-block;
+    height: 81vh;
+    width: 28vw;
+    background-color: rgb(21, 21, 21);
+    /* border: 1px solid white; */
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.lib{
+    color: white;
+    width: 100%;
+    background-color: rgba(21, 21, 21, 0);
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.lib img,.lib span,.lib p{
+    opacity: 0.75;
+}
+
+.lib img:hover,
+.lib span:hover,
+.lib p:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.lib p{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: rgba(21, 21, 21, 0);
+    padding-left: 10px;
+}
+.lib span{
+    margin-left: 14rem;
+    background-color: rgba(127, 255, 212, 0);
+    font-size: 2rem;
+}
+.sidebar .box{
+    height: 130px;
+    width: 24rem;
+    margin-left: 0.75rem;
+    margin-top: 3rem;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    padding-left: 25px;
+    padding-top: 16px;
+}
+.sidebar p,.sidebar b{
+    background-color: rgb(33, 33, 33);
+    line-height: 2rem;
+    font-size: 17px;
+}
+.sidebar .box button{
+    margin-top: 1rem;
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 120px;
+    border-radius: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.sidebar .box button:hover{
+    transform: scale(1.07);
+}
+
+.sidebar .box .browse{
+    width: 150px;
+}
+.sidebar .box2{
+    margin-top: 1rem;
+}
+.sidebar .links{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(197, 23, 23, 0);
+    color: white;
+    padding-top: 80px;
+    line-height: 2rem;
+}
+.links h6{
+    padding-left: 35px;
+    background-color: rgba(197, 23, 23, 0);
+    cursor: pointer;
+}
+.sidebar .btnl{
+    height: 30px;
+    width: 90px;
+    font-size: small;
+    background-color:rgba(197, 23, 23, 0) ;
+    color: white;
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-top: 20px;
+    transition: transform 0.2s;
+    
+}
+.sidebar .btnl:hover{
+    transform: scale(1.07);
+}
+
+
+
+
+/* content songs setting */
+.content{
+    display: inline-block;
+    height: 81vh;
+    width: 70vw;
+    background-color: rgb(19, 19, 19);
+    overflow: auto;
+    border-radius: 10px;
+    margin-left: 3px;
+    color: white;
+}
+.content h1{
+    background-color: rgb(19, 19, 19);
+    font-size: 25px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.content .songs img{
+    /* position: absolute; */
+    height: 160px;
+    width: 160px;
+    border-radius: 48%;
+}
+.songs{
+    background-color: rgb(19, 19, 19);
+}
+.artistu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+    background-color: rgb(19, 19, 19);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.artist{
+    background-color: rgb(19, 19, 19);
+    height: 260px;
+}
+.artistu p{
+    background-color: rgb(19, 19, 19);
+}
+.artistu .artist{
+    line-height: 25px;
+}
+.content .photosquare .artist img{
+    border-radius: 10px;
+}
+.content .songs h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
